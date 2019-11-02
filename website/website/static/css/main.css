@@ -188,7 +188,7 @@ a.article, a.article:hover {
     margin: 5px auto;
 }
 
-.card-text {
+#event-card {
   white-space: nowrap;
   width: 50em;
   overflow: hidden;

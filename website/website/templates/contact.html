@@ -65,8 +65,7 @@
                 </li>
             </ul> -->
         </nav>
-
-        <!-- Page Content Holder -->
+    <!-- Page Content Holder -->
         <div id="content">
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -83,31 +82,50 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
-                            <h3>Future Events</h3>
+                            <h3>Contact</h3>
                         </ul>
                     </div>
                 </div>
             </nav>
-
-            <!-- ADD Content HERE -->
-            {% for event in events.all %}
-              {% if event.event_time == 'f' %}
-                <div class="card mb-3">
-                  <a href="{% url 'event' event.id %}">
-                    <img src="{{ event.event_poster.url }}" class="card-img-top" alt="Event Poster">
-                    <div class="card-body">
-                      <h5 class="card-title">{{ event.event_name }}</h5>
-                      <p class="card-text" id="event-card">{{ event.event_description }}</p>
-                      <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+            <div class="container-fluid">
+                <div class="card-deck" >
+                    <!-- Contact 1 FIC  -->
+                    <div class="card" >
+                        <img class="card-img-top" src="/media/contact_images/fic.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Atul Gupta</h4>
+                            <p class="card-text">POSITION : Faculty Incharge.</p>
+                            <p class="card-text">Contact Number : +91 ----- -----</p>
+                            <p class="card-text">Email : atul@iiitdmj.ac.in</p>
+                            <a href="https://sites.google.com/view/atulgupta/Home" class="btn btn-primary">See Site</a>
+                        </div>
                     </div>
-                  </a>
+                    <!-- Contact 2 Coordinator -->
+                    <div class="card" >
+                        <img class="card-img-top" src="/media/contact_images/Coordinator.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Ajwad Shaikh</h4>
+                            <p class="card-text"><emp>POSITION :</emp> Coordinator.</p>
+                            <p class="card-text">Contact Number : +91 98696 69086</p>
+                            <p class="card-text">Email : 2017333@iiitdmj.ac.in</p>
+                            <a href="https://www.linkedin.com/in/ajwad-shaikh/" class="btn btn-primary">See Linkdin Profile</a>
+                        </div>
+                    </div>
+                    <!-- Contact 3 Co-Coordinator -->
+                    <div class="card" >
+                    <img class="card-img-top" src="/media/contact_images/Co-Coordinator.png" alt="Card image">
+                    <div class="card-body">
+                    <h4 class="card-title">Anuj Pratap Singh</h4>
+                    <p class="card-text"><emp>POSITION :</emp> Co-Coordinator.</p>
+                    <p class="card-text">Contact Number : +91 94571 23705</p>
+                    <p class="card-text">Email : 2017049@iiitdmj.ac.in</p>
+                    <a href="https://www.linkedin.com/in/chauhan176/" class="btn btn-primary">See Linkdin Profile</a>
                 </div>
-              {% endif %}
-            {% endfor %}
-
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.JS -->
