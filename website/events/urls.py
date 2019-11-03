@@ -21,4 +21,6 @@ urlpatterns = [
     path('past/', views.past, name='past'),
     path('present/', views.present, name='present'),
     path('future/', views.future, name='future'),
+    path('event/<int:event_id>', views.event, name='event'),
+
 ]

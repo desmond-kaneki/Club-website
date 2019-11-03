@@ -8,11 +8,11 @@ class Event(models.Model):
     event_poster = models.ImageField(upload_to='event_posters/',blank=False,null=True)
     event_description = models.CharField(max_length=256, blank=False)
     event_date = models.DateField()
-    img1 = models.ImageField(upload_to='event_img/', blank=True)
-    img2 = models.ImageField(upload_to='event_img/', blank=True)
-    img3 = models.ImageField(upload_to='event_img/', blank=True)
-    img4 = models.ImageField(upload_to='event_img/', blank=True)
-    img5 = models.ImageField(upload_to='event_img/', blank=True)
+    img1 = models.ImageField(upload_to='event_img/', blank=True, null=True)
+    img2 = models.ImageField(upload_to='event_img/', blank=True, null=True)
+    img3 = models.ImageField(upload_to='event_img/', blank=True, null=True)
+    img4 = models.ImageField(upload_to='event_img/', blank=True, null=True)
+    img5 = models.ImageField(upload_to='event_img/', blank=True, null=True)
     time_choice = [
         ('f','Future'),
         ('n','Present'),

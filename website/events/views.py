@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Event
 import datetime
 
@@ -27,3 +27,9 @@ def present(request):
 def future(request):
     events = Event.objects
     return render(request, 'events/future.html', {'events':events})
+
+def event(request, event_id):
+    event = get_object_or_404(Event, pk = event_id)
+    return render(request, 'events/detail.html', {'event':event})
+
+
